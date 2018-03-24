@@ -1,12 +1,13 @@
 # Sihirli Kareler
 Sihirli kareler n*n (n>= 3) bir matrisin satır , sütun ve köşegenleri üzerinde yerleştirilen tüm sayıların toplamının aynı olduğu matrislerdir. Bu matrise sayıların uygun yerleştirilmesi için 3 farklı yaklaşım vardır.
-### - [x] n = Tek sayılar için
-### - [x] n/2 = Çift sayılar için
-### - [ ] n/2 = Tek sayılar için
+- [x] n = Tek sayılar için
+- [x] n/2 = Çift sayılar için
+- [ ] n/2 = Tek sayılar için
 
 ## n = Tek sayılar için 
 
-	Tek sayıda satır ve sütuna sahip matrislerdir. Sayıların uygun yerleştirilmesi için uygulanacak algoritma şu şekildedir:
+Tek sayıda satır ve sütuna sahip matrislerdir.
+Sayıların uygun yerleştirilmesi için uygulanacak algoritma şu şekildedir :
 **i = satır** , **j = sütun** olarak alınırsa;
 
 Ilk olarak bir başlangıç değeri verilmelidir.
@@ -28,17 +29,18 @@ Eğer **i+1**, **j+1** noktaları dolu ise **i = i** , **j = j-1** noktasından 
 ![5](/Images/5.png)	![6](/Images/6.png)
 
 Sonuç olarak satır, sütun ve köşegenleri eşit olan bir matris elde ediyoruz.
-Tek değerler için beklenen toplam değeri : ** ((a0 + an) / 2) *n **
+Tek değerler için beklenen toplam değeri : __((a0 + an) / 2) *n__
 
 ## n/2 = Çift sayılar için
 
-	Çift sayıda satır ve sütuna sahip matrislerdir. Sayıların uygun yerleştirilmesi için uygulanacak algoritma şu şekildedir:
+Çift sayıda satır ve sütuna sahip matrislerdir.
+Sayıların uygun yerleştirilmesi için uygulanacak algoritma şu şekildedir :
 **i = satır** , **j = sütun** olarak alınırsa;
 Başlangıçta bütün sayılar matrise yerleştirilir.
 
 ![7](/Images/7.png)	
  
-Sonra matris **n/2** **n/4** **n/2** olarak bölümlere ayrılır.
+Sonra matris **n/2** , **n/4** , **n/2** olarak bölümlere ayrılır.
  
 ![8](/Images/8.png)
 
@@ -49,4 +51,4 @@ Sonra matris **n/2** **n/4** **n/2** olarak bölümlere ayrılır.
 Swaplar yapıldıktan sonra oluşan satır,sütun ve köşegenler toplamı eşit olmaktadır.
 
 Çift matris için beklenen değer tek matrisden farklıdır.
-Çift matris için beklenen değer : **(((a0 + an) / 2) *n) + n/2** olarak hesaplanır.
+Çift matris için beklenen değer : __(((a0 + an) / 2) *n) + n/2__ olarak hesaplanır.
